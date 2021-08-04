@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: white;
+    font-family:'MonteCarlo', sans-serif ;
+    min-height: 100vh;
+}
+
+header{
+     font-size: 30px;
+}
+
+header, form{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input, form button{
+    padding:10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    border: none;
+    background-color: white;
+    color: pink;
+    font-family: cursive;
+    border-radius: 5px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+form button{
+    color: pink;
+    background:white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    border-radius: 5px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.todo-Input :hover{
+    background: transparent;
+    color: pink;
+}
+
+.todo-Button:hover{
+    background: transparent;
+    color: white;
+}
+
+.todo-Input :focus{
+    border: none;
+}
+
+.todoContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-List{
+    min-width: 30%;
+    list-style: none;
+}
+.todo{
+    margin: 0.5rem;
+    background-color: white;
+    color: pink;
+    font-size:20px ;
+    font-family: cursive;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+}
+
+.todo li{
+    flex: 1;
+    padding: 10px;
+}
+.delete-btn{
+    border-radius: 5px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+
+.delete-btn, .completed-btn{
+    background: pink;
+    color: white;
+    border: none;
+    padding: 20px;
+    cursor: pointer;
+    font: 20px;
+    
+}
+
+.completed-btn{
+    background: white;
+    color: pink;
+}
+
+.todo-item{
+    padding: 0rem 0.5rem;
+}
+
+.fa-trash, .fa-check{
+    pointer-events: none;
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+    
+}
+
+.fall{
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+}
+
+.select{
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+select{
+    color: pink;
+    width: 10rem;
+    cursor: pointer;
+    padding:10px;
+    font-size: 20px;
+    font-family: cursive;
+    border-radius: 5px;
+}
+
+.select ::after{
+    content: "\25BC";
+    position: absolute;
+    background-color: pink;
+    color: white;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
